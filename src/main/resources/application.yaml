@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: stub
+  threads:
+    virtual:
+      enabled: true
+server:
+  port: 8081
+logging:
+  level:
+    root: ${LOG_LEVEL_ROOT:INFO}
+    com.popovrnd.stub: ${LOG_LEVEL_STUB:WARN}

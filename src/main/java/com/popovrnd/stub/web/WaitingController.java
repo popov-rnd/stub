@@ -16,9 +16,9 @@ public class WaitingController {
 
     @GetMapping("/waiting")
     public ResponseEntity<Void> waiting() {
-        log.info("Waiting is called!");
+        //log.info("Waiting is called!, Thread = {}", Thread.currentThread());
         try {
-            Thread.sleep(50);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

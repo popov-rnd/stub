@@ -30,7 +30,7 @@ Spring Boot Maven plugin can build an OCI image directly from your jar using *Cl
 
 ```
 ./mvnw spring-boot:build-image \
-  -Dspring-boot.build-image.imageName=stub:jvm
+  -Dspring-boot.build-image.imageName=stub-500:jvm
 ```
 
 This runs the Maven package lifecycle and produces an image without you writing a Dockerfile.

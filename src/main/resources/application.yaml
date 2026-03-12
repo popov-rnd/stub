@@ -6,6 +6,9 @@ spring:
       enabled: true
 server:
   port: 8081
+  tomcat:
+    max-connections: 30000
+    accept-count: 10000
 logging:
   level:
     root: ${LOG_LEVEL_ROOT:INFO}
